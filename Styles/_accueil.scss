@@ -169,7 +169,7 @@ a {
     .restaurant_card_new{
         @include flexMidCen;
         position: absolute;
-        background: #99e2d0;
+        background: $color-thrid;
         top: 20px; 
         right: 20px;
         p{

@@ -6,24 +6,6 @@
       transform: rotate(360deg);
     }
 }
-
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(-50px);
-  }
-}
- 
-@keyframes slide-right {
-  0% {
-    transform: scaleX(-100px);
-  }
-  100% {
-    transform: scaleX(0);
-  }
-}
  
 @keyframes fade {
   0% {

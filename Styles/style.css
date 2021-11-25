@@ -20,50 +20,6 @@
   }
 }
 
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(-50px);
-            transform: scaleX(-50px);
-  }
-}
-
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: scaleX(-100px);
-            transform: scaleX(-100px);
-  }
-  100% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-}
-
-@keyframes slide-right {
-  0% {
-    -webkit-transform: scaleX(-100px);
-            transform: scaleX(-100px);
-  }
-  100% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-}
-
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -398,7 +354,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  background: #99e2d0;
+  background: #99E2D0;
   top: 20px;
   right: 20px;
 }
@@ -645,19 +601,17 @@ footer {
 
 .menu_title {
   position: relative;
-  font-weight: lighter;
   text-transform: uppercase;
 }
 
 .menu_title ::after {
   content: '';
   width: 50px;
-  height: 4px;
+  height: 3px;
   background: #99E2D0;
   position: absolute;
-  z-index: 20;
   left: 0px;
-  bottom: -8px;
+  bottom: -5px;
 }
 
 .menu_dish {
@@ -683,19 +637,6 @@ footer {
 }
 
 .menu_dish .check_box {
-  position: absolute;
-  background: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  right: 0px;
-  padding: 0 13px;
-  height: 100%;
-  -webkit-animation: slide-right 0.5s ease-in;
-          animation: slide-right 0.5s ease-in;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
-.menu_dish:hover .check_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,10 +646,26 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: slide-left 0.5s ease-out;
-          animation: slide-left 0.5s ease-out;
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  width: 0px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  height: 100%;
+}
+
+.menu_dish:hover .check_box {
+  width: 60px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.menu_dish .menu_price {
+  margin-right: 15px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .menu_dish:hover .menu_price {
@@ -720,8 +677,11 @@ footer {
 .menu_dish i {
   font-size: 30px;
   color: white;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+}
+
+.menu_dish:hover i {
+  font-size: 30px;
+  color: white;
   -webkit-animation: rotate 0.5s both;
           animation: rotate 0.5s both;
 }

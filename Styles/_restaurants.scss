@@ -37,17 +37,16 @@
 
 .menu_title{
     position: relative;
-    font-weight: lighter;
+    // font-weight: lighter;
     text-transform: uppercase;
     ::after{
         content: '';
         width: 50px;
-        height: 4px;
+        height: 3px;
         background: $color-thrid;
         position: absolute;
-        z-index: 20;
         left: 0px;
-        bottom: -8px;
+        bottom: -5px;
     }
 }
 .menu_dish{
@@ -64,28 +63,33 @@
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
     margin:20px 0 20px 0;
     .check_box{
-    //display: none;
+    @include flexMidCen;
+    width: 0px;
+    transition: 0.5s ease-out ;
     position: absolute;
     background: $color-thrid;
     border-radius: 0 15px 15px 0;
     right: 0px;
-    padding: 0 13px;
     height: 100%;
-    animation: slide-right 0.5s ease-in;
-    transform-origin: right;
     }&:hover .check_box{
-        @include flexMidCen;
-        animation: slide-left 0.5s ease-out;
-        transform-origin: right;
+        width: 60px;
+        transition: 0.5s ease-out ;
+    }
+    .menu_price{
+        margin-right: 15px;
+        transition: 0.5s ease-out ; 
     }
     &:hover .menu_price{
         margin-right: 70px;
         transition: 0.5s ease-out ; 
     }
-    i {
+    i{
         font-size: 30px;
         color: white;
-        transform: rotate(180deg);
+    }
+    &:hover i {
+        font-size: 30px;
+        color: white;
         animation: rotate 0.5s both;
     }
 }
