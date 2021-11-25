@@ -121,7 +121,7 @@
     @include button;
     @include flexMidCen;
     &:hover{
-        @include button_hover
+        @include buttonHover
     }
     }   
 
