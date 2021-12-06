@@ -34,9 +34,8 @@ a {
     inset: 0;
     height: 100vh;
     @include flexMidCen;
-    transition: opacity 1s ease-in-out;
     z-index:1;
-    opacity: 0.9;
+    opacity: 1;
     animation: disappear 700ms 3s forwards;
     transform-origin:top;
 }
