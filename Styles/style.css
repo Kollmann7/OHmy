@@ -114,6 +114,67 @@ a {
 }
 
 /**Loader*/
+.loader_container {
+  position: fixed;
+  background: #f2f2f2;
+  inset: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  opacity: 1;
+  -webkit-animation: disappear 700ms 3s forwards;
+          animation: disappear 700ms 3s forwards;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #9359DC;
+  -webkit-animation: rotate 2s infinite;
+          animation: rotate 2s infinite;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+
+.loader::before {
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border-top-color: #FF79DA;
+  -webkit-animation: rotate 3s infinite;
+          animation: rotate 3s infinite;
+}
+
+.loader::after {
+  top: 25px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  border-top-color: #99E2D0;
+  -webkit-animation: rotate 1.5s infinite;
+          animation: rotate 1.5s infinite;
+}
+
 /*localisation*/
 .localisation {
   display: -webkit-box;
@@ -346,7 +407,7 @@ a {
   font-weight: 700;
 }
 
-.restaurant_block_hearth {
+.restaurant_block_heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,7 +422,7 @@ a {
   margin-right: 30px;
 }
 
-.restaurant_block_hearth .heart {
+.restaurant_block_heart .heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,19 +438,19 @@ a {
   cursor: pointer;
 }
 
-.restaurant_block_hearth .heart_full {
+.restaurant_block_heart .heart_full {
   position: absolute;
   stroke: none;
   fill: url(#heart_gradient);
 }
 
-.restaurant_block_hearth .heart_empty {
+.restaurant_block_heart .heart_empty {
   fill: white;
   stroke: black;
   position: absolute;
 }
 
-.restaurant_block_hearth .heart_empty:hover {
+.restaurant_block_heart .heart_empty:hover {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
