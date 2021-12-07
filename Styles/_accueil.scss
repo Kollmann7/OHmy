@@ -150,7 +150,7 @@ a {
         margin: 20px;
     }
 }
-/*restaurant*/
+/*restaurants*/
 .restaurant{
     background: #f2f2f2;
     @include flexCol;
@@ -221,14 +221,12 @@ a {
         cursor:pointer;
         }
         .heart_full {
-        position: absolute;
         stroke: none;
         fill:url(#heart_gradient)
         }
         .heart_empty {
             fill:white;
             stroke:  black;
-            position: absolute; 
             &:hover {
               opacity: 0;
               transition: 0.5s;
