@@ -37,7 +37,6 @@
 
 .menu_title{
     position: relative;
-    // font-weight: lighter;
     text-transform: uppercase;
     ::after{
         content: '';
@@ -169,7 +168,6 @@
     .menu_container{
         display: flex;
         flex-direction: row;
-        
     }
     .menu_starter{
         width: 30%;
