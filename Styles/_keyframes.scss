@@ -7,21 +7,7 @@
       transform: rotate(360deg);
     }
 }
-/*Menu animation */ 
-@keyframes fade {
-  0% {
-  opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /*Waiting screen*/
-@keyframes loader{
-  100%{
-    transform: translateY(-30px);
-  }
-}
 
 @keyframes disappear{
   0%{
@@ -30,4 +16,24 @@
   100%{
     transform: scale(0);
   }
+}
+
+@keyframes fade {
+  0% {
+  opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Menu*/
+@keyframes dishspan {
+    0% {
+    opacity: 0;
+    top: 50px;
+    }
+    100% {
+    opacity: 1;
+    top: 0px;
+    }
 }
