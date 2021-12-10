@@ -214,8 +214,8 @@ a {
 /*description*/
 .desc {
   text-align: center;
-  background-color: #f3f2f2;
-  height: 200px;
+  background-color: #f3f2f260;
+  height: 250px;
 }
 
 .desc h2 {
