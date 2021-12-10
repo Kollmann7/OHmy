@@ -127,67 +127,6 @@ a {
 }
 
 /*Loader*/
-.loader_container {
-  position: fixed;
-  background: #f2f2f2;
-  inset: 0;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1;
-  opacity: 1;
-  -webkit-animation: disappear 700ms 3s forwards;
-          animation: disappear 700ms 3s forwards;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-}
-
-.loader {
-  display: block;
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 7px solid transparent;
-  border-top-color: #9359DC;
-  -webkit-animation: rotate 2s infinite;
-          animation: rotate 2s infinite;
-}
-
-.loader::before, .loader::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 7px solid transparent;
-}
-
-.loader::before {
-  top: 10px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  border-top-color: #FF79DA;
-  -webkit-animation: rotate 3s infinite;
-          animation: rotate 3s infinite;
-}
-
-.loader::after {
-  top: 25px;
-  bottom: 25px;
-  left: 25px;
-  right: 25px;
-  border-top-color: #99E2D0;
-  -webkit-animation: rotate 1.5s infinite;
-          animation: rotate 1.5s infinite;
-}
-
 /*localisation*/
 .localisation {
   display: -webkit-box;
@@ -200,7 +139,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px;
-  background: #ecebeb;
+  background: rgba(228, 227, 227, 0.623);
 }
 
 .localisation .localisation_icon {
@@ -214,6 +153,8 @@ a {
 /*description*/
 .desc {
   text-align: center;
+  background-color: #f3f2f2;
+  height: 200px;
 }
 
 .desc h2 {
@@ -222,6 +163,7 @@ a {
 
 .desc p {
   padding: 15px;
+  color: grey;
 }
 
 .desc button {
