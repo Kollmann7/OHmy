@@ -452,11 +452,13 @@ a {
 }
 
 .restaurant_block_heart .heart_full {
+  position: absolute;
   stroke: none;
   fill: url(#heart_gradient);
 }
 
 .restaurant_block_heart .heart_empty {
+  position: absolute;
   fill: white;
   stroke: black;
 }

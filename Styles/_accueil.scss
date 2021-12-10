@@ -221,10 +221,12 @@ a {
         cursor:pointer;
         }
         .heart_full {
+        position: absolute;
         stroke: none;
         fill:url(#heart_gradient)
         }
         .heart_empty {
+            position: absolute;
             fill:white;
             stroke:  black;
             &:hover {
